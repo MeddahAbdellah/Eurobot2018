@@ -8,22 +8,23 @@ L'objet Robot permet après avoir fait les bons branchements de contrôler le d�
 
 ### aller(x,y,facultatifs...)
 
-	monRobot.aller(float xConsigne,float yConsigne,bool activerEvitement=true,float tolerence=TOLERENCEDEPLACEMENT,
-		       int timeToStopReg=TIMETOSTOPREGULATION,int modeDeDeplacement=DIRECT);
+	monRobot.aller(float xConsigne,float yConsigne,bool activerEvitement=true,
+		       float tolerence=TOLERENCEDEPLACEMENT,int timeToStopReg=TIMETOSTOPREGULATION,
+	               int modeDeDeplacement=DIRECT);
 	
 qui envoie le robot vers une position (x,y) sans lui imposé un angle précis d'arrivé,
 cette méthode prend essentiellement en paramètre la position vers la quelle doit se
 rendre le robot en coordonnées cartésiennes absolu.
 Elle prend en paramètre facultatif:<br>
 -l'activation de l'évitement.<br>
--la tolérance à l'arrivé au point demandé.<br><br>
+-la tolérance à l'arrivé au point demandé.<br>
 -le temps de régulation après le quelle si le robot n'arrive pas à sa destination il abandonne le déplacement, pour éviter les blocages.<br>
 -mode de déplacement en COURBE ou DIRECT.<br>
 
 ### tourner(theta,facultatifs...)
 
-	monRobot.tourner(float thetaC,bool activerEvitement=true, int modeDeRotation=NORMAL,float tolerence=TOLERENCEROTATION,
-	                 int timeToStopReg=TIMETOSTOPREGULATION);	
+	monRobot.tourner(float thetaC,bool activerEvitement=true, int modeDeRotation=NORMAL,
+			 float tolerence=TOLERENCEROTATION,int timeToStopReg=TIMETOSTOPREGULATION);	
 
 qui fait tourner le robot sur lui-même vers un angle absolu.
 cette méthode prend essentiellement en paramètre l'angle que doit avoir le robot. elle prend le même paramètre facultatif que la méthode aller. <br>
