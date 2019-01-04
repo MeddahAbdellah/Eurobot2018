@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdellag Meddah, Ecole  National Polytechnique, LIC=GE7EV-P3YMF-QIG5M-XU4SC-NZ0PA-A0WDB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\1er ELN\Eurobot\CodesToUse\VertMatch\WorkWithThis.uvprojx
+Project File Date:  04/10/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'WorkWithThis'
+compiling Odometry2.cpp...
+compiling Odometry.cpp...
+Odometry/Odometry.cpp(42): warning:  #1361-D: function "mbed::Ticker::attach(T *, M, float) [with T=Odometry, M=void (Odometry::*)()]"  (declared at line 102 of "mbed/./drivers/Ticker.h") was declared "deprecated"
+      updater.attach(this, &Odometry::update, 
+s);
+Odometry/Odometry.cpp(134): warning:  #1-D: last line of file ends without a newline
+      
+Odometry/Odometry.cpp: 2 warnings, 0 errors
+compiling moteur.cpp...
+compiling QEI.cpp...
+QEI/QEI.cpp(154): warning:  #1361-D: function "mbed::InterruptIn::rise(T *, M) [with T=QEI, M=void (QEI::*)()]"  (declared at line 102 of "mbed/./drivers/InterruptIn.h") was declared "deprecated"
+      channelA_.rise(this, &QEI::encode);
+QEI/QEI.cpp(155): warning:  #1361-D: function "mbed::InterruptIn::fall(T *, M) [with T=QEI, M=void (QEI::*)()]"  (declared at line 126 of "mbed/./drivers/InterruptIn.h") was declared "deprecated"
+      channelA_.fall(this, &QEI::encode);
+QEI/QEI.cpp(159): warning:  #1361-D: function "mbed::InterruptIn::rise(T *, M) [with T=QEI, M=void (QEI::*)()]"  (declared at line 102 of "mbed/./drivers/InterruptIn.h") was declared "deprecated"
+          channelB_.rise(this, &QEI::encode);
+QEI/QEI.cpp(160): warning:  #1361-D: function "mbed::InterruptIn::fall(T *, M) [with T=QEI, M=void (QEI::*)()]"  (declared at line 126 of "mbed/./drivers/InterruptIn.h") was declared "deprecated"
+          channelB_.fall(this, &QEI::encode);
+QEI/QEI.cpp(164): warning:  #1361-D: function "mbed::InterruptIn::rise(T *, M) [with T=QEI, M=void (QEI::*)()]"  (declared at line 102 of "mbed/./drivers/InterruptIn.h") was declared "deprecated"
+          index_.rise(this, &QEI::index);
+QEI/QEI.cpp: 5 warnings, 0 errors
+compiling main.cpp...
+compiling Robot.cpp...
+linking...
+Program Size: Code=34904 RO-data=2776 RW-data=136 ZI-data=1936  
+FromELF: creating hex file...
+".\BUILD\WorkWithThis.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.LPC1700_DFP.2.3.0.pack
+                Keil.LPC1700_DFP.2.3.0
+                NXP LPC1700 Series Device Support, Drivers and Examples for MCB1700 and LPC1788-32
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_WorkWithThis
+  D:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
