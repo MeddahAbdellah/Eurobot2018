@@ -32,8 +32,9 @@ cette méthode prend essentiellement en paramètre l'angle que doit avoir le rob
 			
 ### positionner(x,y,theta,facultatifs...)
 
-	monRobot.positionner(float xC,float yC, float thetaC,bool activerEvitement=true,float tolerence=TOLERENCEDEPLACEMENT,
-	                     int timeToStopReg=TIMETOSTOPREGULATION,int modeDeDeplacement=DIRECT);
+	monRobot.positionner(float xC,float yC, float thetaC,bool activerEvitement=true,
+			     float tolerence=TOLERENCEDEPLACEMENT,int timeToStopReg=TIMETOSTOPREGULATION,
+			     int modeDeDeplacement=DIRECT);
 
 qui prend trois paramètre essentielle x,y,theta et qui est une combinaison de aller puis tourner.elle prend les mêmes paramètres facultatifs qu’aller.
 
