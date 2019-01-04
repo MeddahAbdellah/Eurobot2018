@@ -1,9 +1,8 @@
 # Eurobot2018
 Bibliothèque complète qui permet de contrôler un robot mobile à 2 roues.
-			L'objet Robot permet après avoir fait les bons branchements de contrôler le déplacement du robot
-			(évitement et déblocage automatique inclus), vous aurez sans doute besoin de changer les paramètres
-  		qui se trouvent dans le fichier defines2.h si vous changer de plateforme roulante.
-			Les Méthode qui constituent cette classent sont :
+L'objet Robot permet après avoir fait les bons branchements de contrôler le déplacement du robot (évitement et déblocage automatique inclus), vous aurez sans doute besoin de changer les paramètres qui se trouvent dans le fichier defines2.h si vous changer de plateforme roulante.
+Les Méthode qui constituent cette classent sont :
+			
 			-aller : qui envoie le robot vers une position (x,y) sans lui imposé un angle précis d'arrivé,
 							 cette méthode prend essentiellement en paramètre la position vers la quelle doit se
 							 rendre le robot en coordonnées cartésiennes absolu.
