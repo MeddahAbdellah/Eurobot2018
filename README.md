@@ -15,10 +15,10 @@ qui envoie le robot vers une position (x,y) sans lui imposé un angle précis d'
 cette méthode prend essentiellement en paramètre la position vers la quelle doit se
 rendre le robot en coordonnées cartésiennes absolu.
 Elle prend en paramètre facultatif:<br>
--l'activation de l'évitement
--la tolérance à l'arrivé au point demandé
--le temps de régulation après le quelle si le robot n'arrive pas à sa destination il abandonne le déplacement, pour éviter les blocages.
--mode de déplacement en COURBE ou DIRECT.
+-l'activation de l'évitement.<br>
+-la tolérance à l'arrivé au point demandé.<br><br>
+-le temps de régulation après le quelle si le robot n'arrive pas à sa destination il abandonne le déplacement, pour éviter les blocages.<br>
+-mode de déplacement en COURBE ou DIRECT.<br>
 
 ### tourner(theta,facultatifs...)
 
@@ -26,7 +26,8 @@ Elle prend en paramètre facultatif:<br>
 	                 int timeToStopReg=TIMETOSTOPREGULATION);	
 
 qui fait tourner le robot sur lui-même vers un angle absolu.
-cette méthode prend essentiellement en paramètre l'angle que doit avoir le robot. elle prend le même paramètre facultatif que la méthode aller. Sauf pour le mode de rotation qui est soit NORMAL quand le robot tourne sur lui-même ou MARCHEENTOURNANT quand le robot doit tourner en déplacement.
+cette méthode prend essentiellement en paramètre l'angle que doit avoir le robot. elle prend le même paramètre facultatif que la méthode aller. <br>
+-Sauf pour le mode de rotation qui est soit NORMAL quand le robot tourne sur lui-même ou MARCHEENTOURNANT quand le robot doit tourner en déplacement.
 			
 ### positionner(x,y,theta,facultatifs...)
 
@@ -65,5 +66,7 @@ qui block le robot sur place (ne le laisse pas bouger meme si des force externes
 	monRobot.stop();
 
 qui éteint les moteurs.
+
+## Note
 
       IMPORTANT: la classe robot doit être accompagné des objets : QEI, Odometry,moteur,mbed
