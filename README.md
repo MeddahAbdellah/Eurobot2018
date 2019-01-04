@@ -14,7 +14,7 @@ L'objet Robot permet après avoir fait les bons branchements de contrôler le d�
 qui envoie le robot vers une position (x,y) sans lui imposé un angle précis d'arrivé,
 cette méthode prend essentiellement en paramètre la position vers la quelle doit se
 rendre le robot en coordonnées cartésiennes absolu.
-Elle prend en paramètre facultatif:
+Elle prend en paramètre facultatif:<br>
 -l'activation de l'évitement
 -la tolérance à l'arrivé au point demandé
 -le temps de régulation après le quelle si le robot n'arrive pas à sa destination il abandonne le déplacement, pour éviter les blocages.
