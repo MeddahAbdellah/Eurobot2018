@@ -3,8 +3,8 @@ Bibliothèque complète qui permet de contrôler un robot mobile à 2 roues.
 L'objet Robot permet après avoir fait les bons branchements de contrôler le déplacement du robot (évitement et déblocage automatique inclus), vous aurez sans doute besoin de changer les paramètres qui se trouvent dans le fichier defines2.h si vous changer de plateforme roulante.
 ### Declaration de l'objet
 
-	Robot(PinName encodeurDA,PinName encodeurDB,PinName encodeurGA,PinName encodeurGB,
-	      PinName moteurDIn1,PinName moteurDIn2,PinName moteurGIn1,PinName moteurGIn2);
+	Robot monRobot(PinName encodeurDA,PinName encodeurDB,PinName encodeurGA,PinName encodeurGB,
+	               PinName moteurDIn1,PinName moteurDIn2,PinName moteurGIn1,PinName moteurGIn2);
 
 ### aller(x,y,facultatifs...)
 
